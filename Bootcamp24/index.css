@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(235, 21%, 11%);
+    position: relative;
+    font-size: 16px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.content {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#bg-img {
+    width: 100vw;
+    height: 45vh;
+    position: relative;
+}
+.todo {
+    position: absolute;
+    top: 0;
+    width: 450px;
+    margin: 50px 0;
+    color: hsl(234, 11%, 52%);
+    font-weight: 400;
+}
+.title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    color: white;
+}
+.title h2 {
+    font-size: 25px;
+    font-weight: 700;
+}
+#icon-sun {
+    width: 20px;
+}
+.create-todo {
+    display: flex;
+    align-items: center;
+    background-color: hsl(235, 24%, 19%);
+    padding: 15px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+input {
+    width: 100%;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+}
+span {
+    border-radius: 50%;
+    height: 18px;
+    width: 18px;
+    border: 1px solid hsl(233, 14%, 35%);
+    margin-right: 10px;
+    display: block;
+}
+span:hover {
+    border-color: hsl(280, 87%, 65%);
+}
+.todo-list {
+    background-color: hsl(235, 24%, 19%);
+    border-radius: 4px;
+    padding: 10px 0;
+}
+.list {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 7px 0;
+    margin-left: 15px;
+    margin-right: 15px;
+    position: relative;
+}
+.list:hover {
+    cursor: pointer;
+}
+.ruler {
+    border: 0;
+    height: 1px;
+    width: 100%;
+    background-color: hsl(233, 14%, 35%);
+}
+.cross {
+    width: 16px;
+    position: absolute;
+    right: 0;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.cross-maxwidth {
+    max-height: 18px;
+}
+.crosstwo {
+    width: 16px;
+    position: absolute;
+    right: 0;
+    max-height: 0px;
+    overflow: hidden;
+}
+
+.cross-maxwidths {
+    max-height: 18px;
+}
